@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = pickle.load(open("model.pkl","rb"))
-scaler = pickle.load(open("scaler.pkl","rb"))
+model = joblib.load("model.pkl")
+scaler = joblib.load("scaler.pkl")
 
 st.title("Diabetes Prediction App")
 
